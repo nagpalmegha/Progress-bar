@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Progressbar Test</title>
+		<link rel="stylesheet" href = "../css/dest/output.css">
+		<script src= "../scripts/dest/output.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+
+	<body ng-app="progressbar" ng-controller="progressbarController">
+		<div class="container-fluid">
+			 <h1>PROGRESS BAR DEMO</h1>
+			<progressbardirective  barstate="progressbarStates[0]"></progressbardirective>
+			<progressbardirective  barstate="progressbarStates[1]"></progressbardirective>
+			<progressbardirective  barstate="progressbarStates[2]" ></progressbardirective>
+			<div class="row">
+				<div class="col-sm-3 col-md-3 progressbar-container">
+					<select class="form-control .progressbar-select"  ng-model="selectedprogressbar" >
+					  <option value="0">#progress1</option>
+					  <option value="1">#progress2</option>
+					  <option value="2">#progress3</option>
+					</select>
+				</div>
+				<div class="col-sm-4 col-md-4">
+					<button class="btn btn-default" ng-click="increment(selectedprogressbar,-25)">-25</button>
+					<button class="btn btn-default" ng-click="increment(selectedprogressbar,-10)">-10</button>
+					<button class="btn btn-default" ng-click="increment(selectedprogressbar,10)">+10</button>
+					<button class="btn btn-default" ng-click="increment(selectedprogressbar,25)">+25</button>
+				</div>
+			</div>
+		<div>
+	</body>
+</html>

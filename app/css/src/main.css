@@ -1,0 +1,24 @@
+.progressbar-select{
+     width: 130px;
+}
+ 
+.progressbar-container {
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.progress-bar span {
+	color:black; 
+	white-space:nowrap;
+	display: block;
+    position: absolute;
+    width: 100%;
+}
+
+.progress-bar-warning{
+	background-color: #FF0000;
+}
+
+.progress-bar-success{
+	background-color: #87CEFA;
+}
